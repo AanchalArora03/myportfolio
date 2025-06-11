@@ -4,6 +4,7 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Aanchal Arora | Portfolio</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <style>
     :root {
       --primary: #004080;
@@ -26,6 +27,7 @@
       background-color: var(--secondary);
       color: var(--text-dark);
       line-height: 1.6;
+      font-size: 1.05rem;
     }
 
     header {
@@ -94,6 +96,28 @@
       text-decoration: underline;
     }
 
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    .badge {
+      background: var(--accent);
+      color: white;
+      padding: 4px 10px;
+      border-radius: 12px;
+      font-size: 0.85rem;
+      margin-right: 8px;
+      display: inline-block;
+      margin-bottom: 6px;
+    }
+
+    .mobile-break {
+      display: none;
+    }
+
     @media (max-width: 768px) {
       header h1 {
         font-size: 2rem;
@@ -103,15 +127,21 @@
         padding: 20px 10px;
       }
     }
+
+    @media (max-width: 500px) {
+      .mobile-break {
+        display: inline;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Aanchal Arora</h1>
-    <p>Delhi | <a href="mailto:aanchalarora979@gmail.com">aanchalarora979@gmail.com</a> | <a href="tel:+918595713808">+91-8595713808</a></p>
+    <p>Delhi | <br class="mobile-break"/><a href="mailto:aanchalarora979@gmail.com">aanchalarora979@gmail.com</a> | <a href="tel:+918595713808">+91-8595713808</a></p>
     <p>
-      <a href="https://www.linkedin.com/in/aanchal-arora-214690214/" target="_blank">LinkedIn</a> |
-      <a href="https://github.com/maydev18" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/aanchal-arora-214690214/" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+      <a href="https://github.com/maydev18" target="_blank" rel="noopener noreferrer">GitHub</a>
     </p>
   </header>
 
@@ -143,7 +173,7 @@
     <section>
       <h2>Projects</h2>
       <div class="card">
-        <p><strong>Disease Predictor Tool</strong> — <a href="https://github.com/maydev18/Disease-prediction-and-diagnosis-Machine-learning-project" target="_blank">GitHub</a></p>
+        <p><strong><a href="https://github.com/maydev18/Disease-prediction-and-diagnosis-Machine-learning-project" target="_blank" rel="noopener noreferrer">Disease Predictor Tool</a></strong></p>
         <ul>
           <li>Ensemble model with KNN, Naive Bayes, SVM, Random Forest.</li>
           <li>Predicts diseases from user input symptoms.</li>
@@ -172,11 +202,36 @@
     <section>
       <h2>Technologies</h2>
       <div class="card">
-        <p><strong>Languages:</strong> C++, Python, MySQL, Java, HTML, CSS, JavaScript</p>
-        <p><strong>Tools:</strong> Git, GitHub, Postman</p>
-        <p><strong>Frameworks & Libraries:</strong> NumPy, Pandas, Scikit-learn, TensorFlow, Matplotlib</p>
+        <p>
+          <strong>Languages:</strong><br/>
+          <span class="badge">C++</span>
+          <span class="badge">Python</span>
+          <span class="badge">MySQL</span>
+          <span class="badge">Java</span>
+          <span class="badge">HTML</span>
+          <span class="badge">CSS</span>
+          <span class="badge">JavaScript</span>
+        </p>
+        <p>
+          <strong>Tools:</strong><br/>
+          <span class="badge">Git</span>
+          <span class="badge">GitHub</span>
+          <span class="badge">Postman</span>
+        </p>
+        <p>
+          <strong>Frameworks & Libraries:</strong><br/>
+          <span class="badge">NumPy</span>
+          <span class="badge">Pandas</span>
+          <span class="badge">Scikit-learn</span>
+          <span class="badge">TensorFlow</span>
+          <span class="badge">Matplotlib</span>
+        </p>
       </div>
     </section>
   </div>
+
+  <footer>
+    &copy; 2025 Aanchal Arora. All rights reserved.
+  </footer>
 </body>
 </html>
