@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aanchal Arora | Portfolio</title>
+  <style>
+    :root {
+      --primary: #004080;
+      --secondary: #f5f9ff;
+      --accent: #0073e6;
+      --text-dark: #222;
+      --text-light: #555;
+      --card-bg: #fff;
+      --shadow: rgba(0, 0, 0, 0.1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: var(--secondary);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    header p, header a {
+      color: #dce6f7;
+      font-size: 1rem;
+    }
+
+    header a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: var(--primary);
+      border-left: 6px solid var(--accent);
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      padding: 20px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 10px var(--shadow);
+      border-radius: 10px;
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .container {
+        padding: 20px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Aanchal Arora</h1>
+    <p>Delhi | <a href="mailto:aanchalarora979@gmail.com">aanchalarora979@gmail.com</a> | <a href="tel:+918595713808">+91-8595713808</a></p>
+    <p>
+      <a href="https://www.linkedin.com/in/aanchal-arora-214690214/" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/maydev18" target="_blank">GitHub</a>
+    </p>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>Education</h2>
+      <div class="card">
+        <p><strong>IGDTUW, Delhi</strong> — MCA (2024–2026)<br/>CGPA: 9.57</p>
+        <p><strong>University of Delhi</strong> — B.Sc. (Hons) Computer Science (2021–2024)<br/>CGPA: 8.69</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <div class="card">
+        <p><strong>Vice President, ACE</strong> — May 2023 – May 2024</p>
+        <ul>
+          <li>Organized coding competitions and managed annual fest.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p><strong>Event Head, MODULUS</strong> — Jan 2022 – Aug 2023</p>
+        <ul>
+          <li>Led escape room event “EUREKA” using strong creative planning.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="card">
+        <p><strong>Disease Predictor Tool</strong> — <a href="https://github.com/maydev18/Disease-prediction-and-diagnosis-Machine-learning-project" target="_blank">GitHub</a></p>
+        <ul>
+          <li>Ensemble model with KNN, Naive Bayes, SVM, Random Forest.</li>
+          <li>Predicts diseases from user input symptoms.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p><strong>Deepfake Detection Tool</strong></p>
+        <ul>
+          <li>Used InceptionV3 and GRU model to detect manipulated videos.</li>
+          <li>Reduced false positives through advanced preprocessing.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Achievements</h2>
+      <div class="card">
+        <ul>
+          <li>Rank 48 – IGDTUW MCA Entrance</li>
+          <li>1st Prize – Sankalan Coding Competition</li>
+          <li>3rd Prize – Code of Duty Blitzkreig 25</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Technologies</h2>
+      <div class="card">
+        <p><strong>Languages:</strong> C++, Python, MySQL, Java, HTML, CSS, JavaScript</p>
+        <p><strong>Tools:</strong> Git, GitHub, Postman</p>
+        <p><strong>Frameworks & Libraries:</strong> NumPy, Pandas, Scikit-learn, TensorFlow, Matplotlib</p>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
